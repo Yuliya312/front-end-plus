@@ -1,0 +1,31 @@
+{
+    "info": {},
+    "data": {
+        "list": [
+            {
+                "id": "001",
+                "title": "title1",
+                "price": 100,
+                 "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRs2QRF0TYPWx5qAWaJwJzX3mVjERiExy-e0zBtLNhRYPUVtI5d"
+            },
+            {
+                "id": "002",
+                "title": "title2",
+                "price": 300,
+                "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgY_AQtzhUV8QF3YZ4nyybG7bCXGPjcw7CinL-qtjMYhgtngvX"
+            },
+            {
+                "id": "003",
+                "title": "title3",
+                "price": 200,
+                "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS7CHBmltn34yRrTcAYSXJ7Dag2Kzxt8xKDLY7lhotbRj1kzML"
+            },
+            {
+                "id": "004",
+                "title": "title4",
+                "price": 500,
+                "img": "http://www.simpla-store.ru/files/products/tovar-v-nalichii.800x600w.jpg?11c33caefe264224da4dfa5d46e7687d"
+            }
+        ]
+    }
+}

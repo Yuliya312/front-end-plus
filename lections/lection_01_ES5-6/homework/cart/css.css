@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+    justify-content: center;
+}
+.item_box {
+    border: 1px solid green;
+    min-width: 150px;
+    background-color: rgb(233, 237, 241);
+}
+
+#pattern_item_box {
+    display: none;
+}
+
+img {
+    height: 220px;
+    width: 225px;
+    overflow: hidden;
+}
+
+#cart_content .cart_content {
+    border: 1px solid blue;
+    display: block;
+    background-color: aquamarine;
+    min-height: 150px;
+}
