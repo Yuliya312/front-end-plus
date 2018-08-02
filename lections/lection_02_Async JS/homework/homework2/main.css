@@ -2,6 +2,7 @@ th {
     border: 1px solid black;
 }
 
-table {
+table,
+td {
     border: 1px solid black;
 }
