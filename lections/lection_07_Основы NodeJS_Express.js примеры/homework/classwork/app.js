@@ -18,14 +18,14 @@ app.use(function (req, res, next) {
     next();
 });
 
-app.get('/', function (req, res, next) {
+app.get('/foo', function (req, res, next) {
     console.log('Request Type:', req.method);
     
     // res.send('hello /foo');
     next();
 });
 
-app.get('/', function (req, res, next) {
+app.get('/foo', function (req, res, next) {
     console.log('second Request Type:', req.method);
 
     // res.send('foo');
