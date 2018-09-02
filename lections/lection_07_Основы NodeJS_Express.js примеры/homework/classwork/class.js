@@ -8,18 +8,6 @@ app.listen(port);
 console.log('Mock server listening on port ' + port);
 let data = "gdgklasdghio\n'";
 
-app.use(bodyParser.urlencoded({extended: true}));
-app.use(bodyParser.text());
-app.use(bodyParser.json({type: 'application/json'}));
-app.use(function (req, res, next) {
-	res.setHeader('Access-Control-Allow-Origin', '*');
-	res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
-	res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
-	res.setHeader('Access-Control-Allow-Credentials', true);
-	next();
-});
-
-
 app.use(function (req, res, next) {
     console.log('next');
     next();
@@ -40,3 +28,13 @@ fs.appendFile("log.txt", data, function(err) {
     if (er) throw err;
     console.log("Saved!");
 });
+
+app.use('/hack', function (req, res, next) {
+    console.log('next');
+    next();
+});
+
+let access = {
+    msg: '',
+    
+}
