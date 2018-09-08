@@ -45,6 +45,17 @@ app.use(function (req, res, next) {
     next();
 });
 
+<<<<<<< HEAD
+app.get('/', function (req, res, next) {
+    console.log('Request Type:', req.method);
+    
+    // res.send('hello /foo');
+    next();
+});
+
+app.get('/', function (req, res, next) {
+    console.log('second Request Type:', req.method);
+=======
 app.use(function (error, req, res, next) {
     console.log('error');
     next();
@@ -56,6 +67,7 @@ app.use(function (error, req, res, next) {
 //     // res.send('hello /foo');
 //     next();
 // });
+>>>>>>> upstream/master
 
 // app.get('/foo', function (req, res, next) {
 //     console.log('second Request Type:', req.method);

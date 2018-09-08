@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+    <div id="taskList">
+        <p v-for="task in list">{{ task }} </p> 
+        <input type="button" value="moveRightButton" v-on:click="clickMeEvent">
+    </div>
+
+    <div id="taskList2">
+        <p v-for="task in list">{{ task }} </p>
+        <input type="button" value="moveLeftButton" v-on:click="clickMeEvent">
+    </div>
+    <!--<div id="app-5">
+        <p>{{ message }}</p>
+        <button v-on:click="clickMeEvent">Click me</button>
+    </div>
+
+    <hr>
+
+    <div id="app-6">
+        <p>{{ result + message }}</p>
+        <input v-model="message">
+    </div>
+
+    <hr>
+
+    <hr>
+
+    <div id="app-7">
+        {{ list }}
+        <ol>
+            <todo-item v-for="item in list" v-bind:struct="{ id: item, value: value  }">
+            </todo-item>
+        </ol>
+    </div>-->
+
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
