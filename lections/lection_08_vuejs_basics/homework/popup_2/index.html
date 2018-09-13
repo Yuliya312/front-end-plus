@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="popup2.css" />
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    
+</head>
+<body>
+    <div id="app">
+        <v-dialog btn-text="Согласен">Вопрос 1></v-dialog>
+    </div>
+
+    <template id="popup__template">
+        <div>
+            <div class="popup" v-show="active">
+                <div class="popup__overlay" @click="close()">
+                    <div class="popup__content">
+                        <div class="popup__body">
+                            <slot></slot>
+                        </div>
+                        <div class="popup__footer">
+                            <button class="btn__close" @click="close()"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="link" @click="open()">some-href</a>
+        </div>
+    </template>
+<!-- 2 vanila js -->
+    <!-- <div id="modal__wraper">
+        <button id="open__modal">Open modal</button>
+        <div id="my__modal" class="modal">
+            <div class="modal__content">
+                <span id = "close" class="close">&times;</span>
+                <p>Some text</p>
+            </div>
+        </div>
+    </div> -->
+
+    <script src="main.js"></script>
+</body>
+</html>

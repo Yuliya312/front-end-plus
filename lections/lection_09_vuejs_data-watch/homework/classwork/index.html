@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+
+<body>
+    
+    <div id="countries">
+        <select v-model="selected">
+            <option disabled value="">Выберите один из вариантов</option>
+            <option v-for="option in list" v-bind:value="option">
+                {{ option }}
+            </option>   
+        </select>
+    </div> 
+    <!-- <span>Выбрано: {{ selected }}</span> -->
+
+    <div id="cityForm">
+        <select v-model="selected">
+        <option disabled value="">Выберите один из вариантов</option>
+        <option v-for="item in cityList" v-if:selected="Украина" v-bind:value="item">
+            {{ item }}
+        </option>
+    </div> 
+        <!-- <span>Выбрано: {{ selected }}</span> -->
+
+    <script src="./main.js"></script>
+</body>
+</html>
+
+<!-- v-if:selected="Украина"  -->
