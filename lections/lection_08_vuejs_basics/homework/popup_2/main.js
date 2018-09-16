@@ -11,30 +11,16 @@ Vue.component("v-dialog", {
             this.active = true
         },
         close: function() {
-            this.close()
+            this.active = false
         },
         onCancel: function() {
-            this.close();
-        },
-        onConfirm: function() {
             this.close();
         }
     }
 })
 
 var app = new Vue({
-    el: "#app",
-    // data: {
-    //     active: false
-    // },
-    // methods: {
-    //     open: function() {
-    //         this.active = true
-    //     },
-    //     close: function() {
-    //         this.close()
-    //     }
-    // }
+    el: "#app"
 })
 
 // --2-- vanila js

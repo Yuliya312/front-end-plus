@@ -11,7 +11,8 @@
 </head>
 <body>
     <div id="app">
-        <v-dialog btn-text="Согласен">Вопрос 1></v-dialog>
+        <v-dialog btn-text="Close">Modal window</v-dialog>
+        <v-dialog btn-text="Close">New popup</v-dialog>
     </div>
 
     <template id="popup__template">
@@ -23,7 +24,7 @@
                             <slot></slot>
                         </div>
                         <div class="popup__footer">
-                            <button class="btn__close" @click="close()"></button>
+                            <button class="btn" @click="onCancel()">{{ btnText }}</button>
                         </div>
                     </div>
                 </div>

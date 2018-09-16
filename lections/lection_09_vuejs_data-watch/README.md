@@ -1,4 +1,4 @@
-# front-end-plus
+# lection_09_vuejs_data-watch
 
 > A Vue.js project
 

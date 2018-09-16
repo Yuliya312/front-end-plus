@@ -1,9 +1,9 @@
-// var app = new Vue({
-//   el: '#app',
-//   data: {
-//     message: 10.5
-//   }
-// })
+var app = new Vue({
+  el: '#app',
+  data: {
+    message: 10.5
+  }
+})
 
 
 // setTimeout(() => {
@@ -12,45 +12,45 @@
 
 // // ---------------------------------------
 
-// var app2 = new Vue({
-//   el: '#app-2',
-//   data: {
-//     className: 'active',
-//     message: 'Вы загрузили эту страницу в: ' + new Date().toLocaleString()
-//   }
-// })
+var app2 = new Vue({
+  el: '#app-2',
+  data: {
+    className: 'active',
+    message: 'Вы загрузили эту страницу в: ' + new Date().toLocaleString()
+  }
+})
 
 // // ---------------------------------------
 
-// var app3 = new Vue({
-//   el: '#app-3',
-//   data: {
-//     seen: true
-//   }
-// })
+var app3 = new Vue({
+  el: '#app-3',
+  data: {
+    seen: true
+  }
+})
 
-// setTimeout(() => {
-//   app3.seen = false;
-// }, 3000)
+setTimeout(() => {
+  app3.seen = false;
+}, 3000)
 
 
 // // ---------------------------------------
 
-// var app4 = new Vue({
-//   el: '#app-4',
-//   data: {
-//     todos: [{
-//         text: 'Изучить JavaScript'
-//       },
-//       {
-//         texts: 'Изучить Vue'
-//       },
-//       {
-//         text: 'Создать что-нибудь классное'
-//       }
-//     ]
-//   }
-// })
+var app4 = new Vue({
+  el: '#app-4',
+  data: {
+    todos: [{
+        text: 'Изучить JavaScript'
+      },
+      {
+        texts: 'Изучить Vue'
+      },
+      {
+        text: 'Создать что-нибудь классное'
+      }
+    ]
+  }
+})
 
 // console.log(app4.todos)
 
@@ -59,17 +59,17 @@
 
 // // ---------------------------------------
 
-// var app5 = new Vue({
-//   el: '#app-5',
-//   data: {
-//     message: 'Привет, Vue.js!'
-//   },
-//   methods: {
-//     clickMeEvent() {
-//       this.message += ' click'
-//     }
-//   }
-// })
+var app5 = new Vue({
+  el: '#app-5',
+  data: {
+    message: 'Привет, Vue.js!'
+  },
+  methods: {
+    clickMeEvent() {
+      this.message += ' click'
+    }
+  }
+})
 
 // // ---------------------------------------
 
